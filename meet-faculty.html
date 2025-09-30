@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Faculty - UET Mardan</title>
+    <meta name="description" content="Meet the distinguished faculty members of UET Mardan across all departments.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Frontend-Backend Integration Script -->
+    <script src="php-backend/public/frontend-integration.js"></script>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-container">
+                    <div class="nav-logo">
+                        <div class="logo-icon">
+                            <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=100&q=80" alt="UET Mardan" class="logo-img">
+                        </div>
+                        <div class="logo-text">
+                            <h3>UET Mardan</h3>
+                            <span>Excellence in Engineering</span>
+                        </div>
+                    </div>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="departments.html" class="nav-link">Departments</a></li>
+                        <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+                        <li><a href="events.html" class="nav-link">Events</a></li>
+                        <li><a href="news.html" class="nav-link">News</a></li>
+                        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                        <li><a href="meet-faculty.html" class="nav-link active">Meet Faculty</a></li>
+                    </ul>
+                    <div class="nav-toggle" id="navToggle"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="faculty-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title"><span class="title-line">Meet Our</span><span class="title-line highlight">Faculty</span></h1>
+                        <p class="hero-subtitle">Experienced professors and industry professionals leading engineering education and research</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faculty-filters">
+            <div class="container">
+                <div class="filters-row">
+                    <select id="deptFilter" class="filter-select">
+                        <option value="all">All Departments</option>
+                        <option value="civil">Civil Engineering</option>
+                        <option value="electrical">Electrical Engineering</option>
+                        <option value="mechanical">Mechanical Engineering</option>
+                        <option value="computer">Computer Science</option>
+                        <option value="software">Software Engineering</option>
+                        <option value="ai">AI & Machine Learning</option>
+                        <option value="datascience">Data Science</option>
+                        <option value="telecom">Telecommunications</option>
+                    </select>
+                    <input type="text" id="searchFaculty" class="filter-input" placeholder="Search faculty by name or research area...">
+                </div>
+            </div>
+        </section>
+
+        <section class="faculty-listing section-animate">
+            <div class="container">
+                <div class="faculty-grid">
+                    <div class="faculty-card animate-on-scroll" data-dept="software" data-animation="fade-in">
+                        <div class="faculty-image">
+                            <img class="faculty-img" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=240&q=80" alt="Dr. Muhammad Hassan">
+                            <div class="faculty-overlay">
+                                <div class="faculty-social">
+                                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                                    <a href="#" class="social-link"><i class="fas fa-linkedin"></i></a>
+                                    <a href="#" class="social-link"><i class="fas fa-globe"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faculty-content">
+                            <div class="faculty-header">
+                                <h3>Dr. Muhammad Hassan</h3>
+                                <span class="faculty-title">Head of Software Engineering</span>
+                                <span class="department-tag">Software Engineering</span>
+                            </div>
+                            <div class="faculty-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>PhD Computer Science, MIT</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-flask"></i>
+                                    <span>Software Architecture, Cloud Computing</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-award"></i>
+                                    <span>15+ Publications, 3 Patents</span>
+                                </div>
+                            </div>
+                            <div class="faculty-actions">
+                                <a href="faculty/muhammad-hassan.html" class="btn btn-primary">View Profile</a>
+                                <button class="btn btn-secondary contact-btn">Contact</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faculty-card animate-on-scroll" data-dept="ai" data-animation="fade-in">
+                        <div class="faculty-image">
+                            <img class="faculty-img" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=240&q=80" alt="Dr. Omar Khan">
+                            <div class="faculty-overlay">
+                                <div class="faculty-social">
+                                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                                    <a href="#" class="social-link"><i class="fas fa-linkedin"></i></a>
+                                    <a href="#" class="social-link"><i class="fas fa-globe"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faculty-content">
+                            <div class="faculty-header">
+                                <h3>Dr. Omar Khan</h3>
+                                <span class="faculty-title">Head of AI & Machine Learning</span>
+                                <span class="department-tag">AI & ML</span>
+                            </div>
+                            <div class="faculty-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>PhD Artificial Intelligence, Stanford</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-flask"></i>
+                                    <span>Machine Learning, Neural Networks</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-award"></i>
+                                    <span>25+ Publications, 5 Patents</span>
+                                </div>
+                            </div>
+                            <div class="faculty-actions">
+                                <a href="faculty/omar-khan.html" class="btn btn-primary">View Profile</a>
+                                <button class="btn btn-secondary contact-btn">Contact</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faculty-card animate-on-scroll" data-dept="datascience" data-animation="fade-in">
+                        <div class="faculty-image">
+                            <img class="faculty-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=240&q=80" alt="Dr. Ali Raza">
+                            <div class="faculty-overlay">
+                                <div class="faculty-social">
+                                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                                    <a href="#" class="social-link"><i class="fas fa-linkedin"></i></a>
+                                    <a href="#" class="social-link"><i class="fas fa-globe"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faculty-content">
+                            <div class="faculty-header">
+                                <h3>Dr. Ali Raza</h3>
+                                <span class="faculty-title">Head of Data Science</span>
+                                <span class="department-tag">Data Science</span>
+                            </div>
+                            <div class="faculty-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>PhD Statistics, Harvard</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-flask"></i>
+                                    <span>Big Data Analytics, Statistical Modeling</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-award"></i>
+                                    <span>20+ Publications, 2 Patents</span>
+                                </div>
+                            </div>
+                            <div class="faculty-actions">
+                                <a href="faculty/ali-raza.html" class="btn btn-primary">View Profile</a>
+                                <button class="btn btn-secondary contact-btn">Contact</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faculty-card animate-on-scroll" data-dept="electrical" data-animation="fade-in">
+                        <div class="faculty-image">
+                            <img class="faculty-img" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=240&q=80" alt="Dr. Khalid Mahmood">
+                            <div class="faculty-overlay">
+                                <div class="faculty-social">
+                                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                                    <a href="#" class="social-link"><i class="fas fa-linkedin"></i></a>
+                                    <a href="#" class="social-link"><i class="fas fa-globe"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faculty-content">
+                            <div class="faculty-header">
+                                <h3>Dr. Khalid Mahmood</h3>
+                                <span class="faculty-title">Head of Electrical Engineering</span>
+                                <span class="department-tag">Electrical</span>
+                            </div>
+                            <div class="faculty-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>PhD Electrical Engineering, UC Berkeley</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-flask"></i>
+                                    <span>Power Systems, Renewable Energy</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-award"></i>
+                                    <span>18+ Publications, 4 Patents</span>
+                                </div>
+                            </div>
+                            <div class="faculty-actions">
+                                <a href="faculty/khalid-mahmood.html" class="btn btn-primary">View Profile</a>
+                                <button class="btn btn-secondary contact-btn">Contact</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faculty-card animate-on-scroll" data-dept="mechanical" data-animation="fade-in">
+                        <div class="faculty-image">
+                            <img class="faculty-img" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=240&q=80" alt="Dr. Zain Ali">
+                            <div class="faculty-overlay">
+                                <div class="faculty-social">
+                                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                                    <a href="#" class="social-link"><i class="fas fa-linkedin"></i></a>
+                                    <a href="#" class="social-link"><i class="fas fa-globe"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faculty-content">
+                            <div class="faculty-header">
+                                <h3>Dr. Zain Ali</h3>
+                                <span class="faculty-title">Head of Mechanical Engineering</span>
+                                <span class="department-tag">Mechanical</span>
+                            </div>
+                            <div class="faculty-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>PhD Mechanical Engineering, MIT</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-flask"></i>
+                                    <span>Robotics, Manufacturing Systems</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-award"></i>
+                                    <span>22+ Publications, 6 Patents</span>
+                                </div>
+                            </div>
+                            <div class="faculty-actions">
+                                <a href="faculty/zain-ali.html" class="btn btn-primary">View Profile</a>
+                                <button class="btn btn-secondary contact-btn">Contact</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faculty-card animate-on-scroll" data-dept="civil" data-animation="fade-in">
+                        <div class="faculty-image">
+                            <img class="faculty-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=240&q=80" alt="Dr. Ahmed Khan">
+                            <div class="faculty-overlay">
+                                <div class="faculty-social">
+                                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                                    <a href="#" class="social-link"><i class="fas fa-linkedin"></i></a>
+                                    <a href="#" class="social-link"><i class="fas fa-globe"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faculty-content">
+                            <div class="faculty-header">
+                                <h3>Dr. Ahmed Khan</h3>
+                                <span class="faculty-title">Head of Civil Engineering</span>
+                                <span class="department-tag">Civil</span>
+                            </div>
+                            <div class="faculty-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>PhD Civil Engineering, Stanford</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-flask"></i>
+                                    <span>Structural Engineering, Materials</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-award"></i>
+                                    <span>30+ Publications, 8 Patents</span>
+                                </div>
+                            </div>
+                            <div class="faculty-actions">
+                                <a href="faculty/ahmed-khan.html" class="btn btn-primary">View Profile</a>
+                                <button class="btn btn-secondary contact-btn">Contact</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"><div class="container"><div class="footer-bottom"><p>&copy; 2024 UET Mardan</p></div></div></footer>
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+    <script src="script.js"></script>
+    <script>
+        const deptFilter = document.getElementById('deptFilter');
+        const searchFaculty = document.getElementById('searchFaculty');
+        const cards = Array.from(document.querySelectorAll('.faculty-card'));
+        function applyFilters(){
+            const dept = deptFilter.value;
+            const term = searchFaculty.value.toLowerCase();
+            cards.forEach(c => {
+                const matchesDept = dept==='all' || c.dataset.dept===dept;
+                const text = c.innerText.toLowerCase();
+                const matchesText = !term || text.includes(term);
+                c.style.display = (matchesDept && matchesText) ? '' : 'none';
+            });
+        }
+        deptFilter.addEventListener('change', applyFilters);
+        searchFaculty.addEventListener('input', applyFilters);
+    </script>
+</body>
+</html>

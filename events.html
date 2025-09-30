@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - UET Mardan</title>
+    <meta name="description" content="Stay updated with upcoming events, workshops, conferences, and student activities at UET Mardan.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Frontend-Backend Integration Script -->
+    <script src="php-backend/public/frontend-integration.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-container">
+                    <div class="nav-logo">
+                        <div class="logo-icon">
+                            <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="UET Mardan Logo" class="logo-img">
+                        </div>
+                        <div class="logo-text">
+                            <h3>UET Mardan</h3>
+                            <span>Excellence in Engineering</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="departments.html" class="nav-link">Departments</a></li>
+                        <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+                        <li><a href="events.html" class="nav-link active">Events</a></li>
+                        <li><a href="news.html" class="nav-link">News</a></li>
+                        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    
+                    <div class="nav-toggle" id="navToggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Events Hero -->
+        <section class="events-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="title-line">Campus</span>
+                            <span class="title-line highlight">Events</span>
+                        </h1>
+                        <p class="hero-subtitle">Discover exciting events, workshops, and activities that enrich your academic experience at UET Mardan</p>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Events Yearly</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">1000+</span>
+                                <span class="stat-label">Participants</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">20+</span>
+                                <span class="stat-label">Workshops</span>
+                            </div>
+                        </div>
+                        <div class="hero-buttons">
+                            <a href="#upcoming-events" class="btn btn-primary">View Events</a>
+                            <a href="#event-calendar" class="btn btn-secondary">Event Calendar</a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Campus Events" class="hero-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Event Categories -->
+        <section class="event-categories section-animate" id="eventCategories">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="categoriesTitle">Event Categories</h2>
+                    <p class="section-subtitle" id="categoriesSubtitle">Explore different types of events happening on campus</p>
+                    <div class="events-note">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Click on any category to filter events</span>
+                    </div>
+                </div>
+                
+                <!-- Dynamic Category Filter -->
+                <div class="category-filters" id="categoryFilters">
+                    <!-- Categories will be loaded dynamically -->
+                </div>
+                
+                <!-- Search and Filter Controls -->
+                <div class="event-controls" id="eventControls">
+                    <div class="search-box">
+                        <input type="text" id="eventSearch" placeholder="Search events...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="filter-options">
+                        <select id="dateFilter">
+                            <option value="">All Dates</option>
+                            <option value="today">Today</option>
+                            <option value="week">This Week</option>
+                            <option value="month">This Month</option>
+                            <option value="upcoming">Upcoming</option>
+                        </select>
+                        <select id="typeFilter">
+                            <option value="">All Types</option>
+                            <option value="academic">Academic</option>
+                            <option value="cultural">Cultural</option>
+                            <option value="technical">Technical</option>
+                            <option value="social">Social</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="categories-grid">
+                    <div class="category-card animate-on-scroll" data-animation="fade-in" data-category="academic">
+                        <div class="category-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Academic Events</h3>
+                        <p>Conferences, seminars, and academic workshops</p>
+                        <span class="event-count">15 Events</span>
+                        <div class="category-overlay">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3>Technical Workshops</h3>
+                        <p>Hands-on training and skill development</p>
+                        <span class="event-count">20 Events</span>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Student Activities</h3>
+                        <p>Clubs, competitions, and social events</p>
+                        <span class="event-count">25 Events</span>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Industry Events</h3>
+                        <p>Career fairs and industry partnerships</p>
+                        <span class="event-count">10 Events</span>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Competitions</h3>
+                        <p>Engineering challenges and hackathons</p>
+                        <span class="event-count">8 Events</span>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Cultural Events</h3>
+                        <p>Celebrations and cultural activities</p>
+                        <span class="event-count">12 Events</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Event Map -->
+        <section id="event-map" class="event-map-section section-animate">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Interactive Event Map</h2>
+                    <p class="section-subtitle">Hover over locations to see event details</p>
+                </div>
+                
+                <div class="map-container">
+                    <div class="campus-map">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Campus Map" class="map-image">
+                        
+                        <!-- Event Markers -->
+                        <div class="event-marker" data-event="ai-workshop" style="top: 30%; left: 25%;">
+                            <div class="marker-pin">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="event-tooltip">
+                                <div class="tooltip-header">
+                                    <h4>AI & Machine Learning Workshop</h4>
+                                    <span class="event-date">March 25, 2024</span>
+                                </div>
+                                <div class="tooltip-content">
+                                    <p><i class="fas fa-clock"></i> 10:00 AM - 4:00 PM</p>
+                                    <p><i class="fas fa-map-marker-alt"></i> AI Lab, Building A</p>
+                                    <p><i class="fas fa-user"></i> Dr. Omar Khan</p>
+                                    <div class="tooltip-actions">
+                                        <a href="#" class="btn btn-primary btn-sm">Register</a>
+                                        <a href="#" class="btn btn-secondary btn-sm">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="event-marker" data-event="civil-seminar" style="top: 45%; left: 60%;">
+                            <div class="marker-pin">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="event-tooltip">
+                                <div class="tooltip-header">
+                                    <h4>Civil Engineering Seminar</h4>
+                                    <span class="event-date">March 28, 2024</span>
+                                </div>
+                                <div class="tooltip-content">
+                                    <p><i class="fas fa-clock"></i> 2:00 PM - 5:00 PM</p>
+                                    <p><i class="fas fa-map-marker-alt"></i> Civil Engineering Hall</p>
+                                    <p><i class="fas fa-user"></i> Dr. Ahmed Khan</p>
+                                    <div class="tooltip-actions">
+                                        <a href="#" class="btn btn-primary btn-sm">Register</a>
+                                        <a href="#" class="btn btn-secondary btn-sm">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="event-marker" data-event="hackathon" style="top: 70%; left: 40%;">
+                            <div class="marker-pin">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="event-tooltip">
+                                <div class="tooltip-header">
+                                    <h4>Annual Hackathon</h4>
+                                    <span class="event-date">April 5, 2024</span>
+                                </div>
+                                <div class="tooltip-content">
+                                    <p><i class="fas fa-clock"></i> 9:00 AM - 6:00 PM</p>
+                                    <p><i class="fas fa-map-marker-alt"></i> Computer Science Lab</p>
+                                    <p><i class="fas fa-user"></i> Dr. Muhammad Hassan</p>
+                                    <div class="tooltip-actions">
+                                        <a href="#" class="btn btn-primary btn-sm">Register</a>
+                                        <a href="#" class="btn btn-secondary btn-sm">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="event-marker" data-event="career-fair" style="top: 55%; left: 80%;">
+                            <div class="marker-pin">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="event-tooltip">
+                                <div class="tooltip-header">
+                                    <h4>Career Fair 2024</h4>
+                                    <span class="event-date">April 15, 2024</span>
+                                </div>
+                                <div class="tooltip-content">
+                                    <p><i class="fas fa-clock"></i> 10:00 AM - 4:00 PM</p>
+                                    <p><i class="fas fa-map-marker-alt"></i> Main Auditorium</p>
+                                    <p><i class="fas fa-user"></i> Career Services</p>
+                                    <div class="tooltip-actions">
+                                        <a href="#" class="btn btn-primary btn-sm">Register</a>
+                                        <a href="#" class="btn btn-secondary btn-sm">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-legend">
+                        <h3>Event Types</h3>
+                        <div class="legend-items">
+                            <div class="legend-item">
+                                <span class="legend-color academic"></span>
+                                <span>Academic Events</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color workshop"></span>
+                                <span>Workshops</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color competition"></span>
+                                <span>Competitions</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color career"></span>
+                                <span>Career Events</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Events -->
+        <section id="upcoming-events" class="upcoming-events section-animate">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Upcoming Events</h2>
+                    <p class="section-subtitle">Don't miss these exciting events happening soon</p>
+                </div>
+                
+                <div class="events-grid">
+                    <div class="event-card featured">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="AI Workshop" class="event-img">
+                            <div class="event-badge">Featured</div>
+                        </div>
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <span class="event-date"><i class="fas fa-calendar"></i> March 25, 2024</span>
+                                <span class="event-time"><i class="fas fa-clock"></i> 10:00 AM - 4:00 PM</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> AI Lab, Building A</span>
+                            </div>
+                            <h3>AI & Machine Learning Workshop</h3>
+                            <p>Join us for an intensive workshop on artificial intelligence and machine learning fundamentals. Learn from industry experts and get hands-on experience with cutting-edge AI tools.</p>
+                            <div class="event-details">
+                                <div class="event-speaker">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&q=80" alt="Dr. Omar Khan" class="speaker-img">
+                                    <span>Dr. Omar Khan, AI Department</span>
+                                </div>
+                                <div class="event-capacity">
+                                    <span class="capacity-text">Limited Seats: 30</span>
+                                    <div class="capacity-bar">
+                                        <div class="capacity-fill" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-primary">Register Now</a>
+                                <a href="#" class="btn btn-secondary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Civil Engineering Seminar" class="event-img">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <span class="event-date"><i class="fas fa-calendar"></i> March 28, 2024</span>
+                                <span class="event-time"><i class="fas fa-clock"></i> 2:00 PM - 5:00 PM</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Auditorium</span>
+                            </div>
+                            <h3>Sustainable Construction Seminar</h3>
+                            <p>Explore innovative approaches to sustainable construction and green building technologies. Industry leaders will share insights on eco-friendly construction methods.</p>
+                            <div class="event-details">
+                                <div class="event-speaker">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&q=80" alt="Dr. Ahmed Khan" class="speaker-img">
+                                    <span>Dr. Ahmed Khan, Civil Department</span>
+                                </div>
+                                <div class="event-capacity">
+                                    <span class="capacity-text">Open to All</span>
+                                </div>
+                            </div>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-primary">Register Now</a>
+                                <a href="#" class="btn btn-secondary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Software Development Workshop" class="event-img">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <span class="event-date"><i class="fas fa-calendar"></i> April 2, 2024</span>
+                                <span class="event-time"><i class="fas fa-clock"></i> 9:00 AM - 6:00 PM</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Computer Lab 3</span>
+                            </div>
+                            <h3>Full-Stack Development Workshop</h3>
+                            <p>Master modern web development with hands-on training in React, Node.js, and database management. Build real-world projects and enhance your portfolio.</p>
+                            <div class="event-details">
+                                <div class="event-speaker">
+                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&q=80" alt="Dr. Muhammad Hassan" class="speaker-img">
+                                    <span>Dr. Muhammad Hassan, Software Department</span>
+                                </div>
+                                <div class="event-capacity">
+                                    <span class="capacity-text">Limited Seats: 25</span>
+                                    <div class="capacity-bar">
+                                        <div class="capacity-fill" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-primary">Register Now</a>
+                                <a href="#" class="btn btn-secondary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Career Fair" class="event-img">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <span class="event-date"><i class="fas fa-calendar"></i> April 5, 2024</span>
+                                <span class="event-time"><i class="fas fa-clock"></i> 10:00 AM - 6:00 PM</span>
+                                <span class="event-location"><i class="fas fa-map-marker-alt"></i> Main Campus</span>
+                            </div>
+                            <h3>Engineering Career Fair 2024</h3>
+                            <p>Connect with leading engineering companies and explore career opportunities. Network with industry professionals and discover internship and job openings.</p>
+                            <div class="event-details">
+                                <div class="event-speaker">
+                                    <span>Multiple Companies</span>
+                                </div>
+                                <div class="event-capacity">
+                                    <span class="capacity-text">Open to All Students</span>
+                                </div>
+                            </div>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-primary">Register Now</a>
+                                <a href="#" class="btn btn-secondary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Calendar -->
+        <section id="event-calendar" class="event-calendar">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Event Calendar</h2>
+                    <p class="section-subtitle">Plan your month with our comprehensive event schedule</p>
+                </div>
+                
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <button class="calendar-nav" id="prevMonth"><i class="fas fa-chevron-left"></i></button>
+                        <h3 id="currentMonth">March 2024</h3>
+                        <button class="calendar-nav" id="nextMonth"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    
+                    <div class="calendar-grid">
+                        <div class="calendar-weekdays">
+                            <div>Sun</div>
+                            <div>Mon</div>
+                            <div>Tue</div>
+                            <div>Wed</div>
+                            <div>Thu</div>
+                            <div>Fri</div>
+                            <div>Sat</div>
+                        </div>
+                        
+                        <div class="calendar-days" id="calendarDays">
+                            <!-- Calendar days will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="monthly-events">
+                    <h3>March 2024 Events</h3>
+                    <div class="monthly-events-list">
+                        <div class="monthly-event">
+                            <span class="event-day">25</span>
+                            <div class="event-info">
+                                <h4>AI & Machine Learning Workshop</h4>
+                                <p>10:00 AM - AI Lab, Building A</p>
+                            </div>
+                        </div>
+                        
+                        <div class="monthly-event">
+                            <span class="event-day">28</span>
+                            <div class="event-info">
+                                <h4>Sustainable Construction Seminar</h4>
+                                <p>2:00 PM - Auditorium</p>
+                            </div>
+                        </div>
+                        
+                        <div class="monthly-event">
+                            <span class="event-day">30</span>
+                            <div class="event-info">
+                                <h4>Student Project Exhibition</h4>
+                                <p>11:00 AM - Main Hall</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Event Registration System -->
+        <section class="event-registration section-animate" id="eventRegistration">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Event Registration</h2>
+                    <p class="section-subtitle">Register for events and manage your participation</p>
+                </div>
+                
+                <div class="registration-container">
+                    <div class="registration-tabs">
+                        <button class="tab-btn active" data-tab="my-events">My Events</button>
+                        <button class="tab-btn" data-tab="register-new">Register New</button>
+                        <button class="tab-btn" data-tab="registration-history">History</button>
+                    </div>
+                    
+                    <div class="tab-content">
+                        <!-- My Events Tab -->
+                        <div class="tab-pane active" id="my-events">
+                            <div class="my-events-list" id="myEventsList">
+                                <!-- User's registered events will be loaded here -->
+                            </div>
+                        </div>
+                        
+                        <!-- Register New Tab -->
+                        <div class="tab-pane" id="register-new">
+                            <div class="registration-form" id="registrationForm">
+                                <!-- Registration form will be loaded here -->
+                            </div>
+                        </div>
+                        
+                        <!-- Registration History Tab -->
+                        <div class="tab-pane" id="registration-history">
+                            <div class="registration-history" id="registrationHistory">
+                                <!-- Registration history will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Analytics & Insights -->
+        <section class="event-analytics section-animate" id="eventAnalytics">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Event Insights</h2>
+                    <p class="section-subtitle">Analytics and statistics from our events</p>
+                </div>
+                
+                <div class="analytics-grid">
+                    <div class="analytics-card">
+                        <div class="analytics-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="analytics-content">
+                            <h3>Total Events</h3>
+                            <div class="analytics-number" id="totalEvents">0</div>
+                            <p>Events this year</p>
+                        </div>
+                    </div>
+                    
+                    <div class="analytics-card">
+                        <div class="analytics-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="analytics-content">
+                            <h3>Total Participants</h3>
+                            <div class="analytics-number" id="totalParticipants">0</div>
+                            <p>Students engaged</p>
+                        </div>
+                    </div>
+                    
+                    <div class="analytics-card">
+                        <div class="analytics-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="analytics-content">
+                            <h3>Average Rating</h3>
+                            <div class="analytics-number" id="averageRating">0.0</div>
+                            <p>Event satisfaction</p>
+                        </div>
+                    </div>
+                    
+                    <div class="analytics-card">
+                        <div class="analytics-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="analytics-content">
+                            <h3>Upcoming Events</h3>
+                            <div class="analytics-number" id="upcomingEvents">0</div>
+                            <p>Next 30 days</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Past Events -->
+        <section class="past-events">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Past Events</h2>
+                    <p class="section-subtitle">Relive the highlights of our previous events</p>
+                </div>
+                
+                <div class="past-events-grid">
+                    <div class="past-event-card">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Tech Conference 2023" class="event-img">
+                            <div class="event-status">Completed</div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Annual Tech Conference 2023</h3>
+                            <p class="event-date">December 15-16, 2023</p>
+                            <p>Our biggest tech event of the year brought together industry leaders, researchers, and students to explore the future of engineering technology.</p>
+                            <div class="event-stats">
+                                <span><i class="fas fa-users"></i> 500+ Attendees</span>
+                                <span><i class="fas fa-presentation"></i> 25 Speakers</span>
+                                <span><i class="fas fa-calendar"></i> 2 Days</span>
+                            </div>
+                            <a href="#" class="btn btn-secondary">View Gallery</a>
+                        </div>
+                    </div>
+                    
+                    <div class="past-event-card">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Engineering Competition" class="event-img">
+                            <div class="event-status">Completed</div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Inter-University Engineering Competition</h3>
+                            <p class="event-date">November 20, 2023</p>
+                            <p>Students from across Pakistan competed in various engineering challenges, showcasing their skills and innovative solutions.</p>
+                            <div class="event-stats">
+                                <span><i class="fas fa-users"></i> 200+ Students</span>
+                                <span><i class="fas fa-university"></i> 15 Universities</span>
+                                <span><i class="fas fa-trophy"></i> 10 Categories</span>
+                            </div>
+                            <a href="#" class="btn btn-secondary">View Results</a>
+                        </div>
+                    </div>
+                    
+                    <div class="past-event-card">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Workshop Series" class="event-img">
+                            <div class="event-status">Completed</div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Summer Workshop Series 2023</h3>
+                            <p class="event-date">July 10-25, 2023</p>
+                            <p>A comprehensive series of workshops covering various engineering disciplines, providing hands-on experience to students.</p>
+                            <div class="event-stats">
+                                <span><i class="fas fa-users"></i> 300+ Students</span>
+                                <span><i class="fas fa-flask"></i> 8 Workshops</span>
+                                <span><i class="fas fa-clock"></i> 15 Days</span>
+                            </div>
+                            <a href="#" class="btn btn-secondary">View Gallery</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Registration -->
+        <section class="event-registration">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Stay Updated</h2>
+                    <p class="section-subtitle">Subscribe to our events newsletter and never miss an important event</p>
+                </div>
+                
+                <div class="registration-form">
+                    <form class="newsletter-form" id="newsletterForm">
+                        <div class="form-group">
+                            <input type="email" placeholder="Enter your email address" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </div>
+                        <p class="form-note">Get notified about upcoming events, workshops, and campus activities</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>UET Mardan</h3>
+                    <p>Excellence in Engineering Education</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="departments.html">Departments</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Departments</h4>
+                    <ul class="footer-links">
+                        <li><a href="departments/civil-engineering.html">Civil Engineering</a></li>
+                        <li><a href="departments/software-engineering.html">Software Engineering</a></li>
+                        <li><a href="departments/ai-engineering.html">AI Engineering</a></li>
+                        <li><a href="departments/electrical-engineering.html">Electrical Engineering</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> UET Mardan, Khyber Pakhtunkhwa</p>
+                    <p><i class="fas fa-phone"></i> +92-937-123456</p>
+                    <p><i class="fas fa-envelope"></i> info@uetmardan.edu.pk</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 UET Mardan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Enhanced Events Styles -->
+    <style>
+        /* Enhanced Events Page Styles */
+        .event-categories {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        
+        .category-filters {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 10px 20px;
+            border: 2px solid #e9ecef;
+            background: white;
+            color: #333;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            border-color: #ff6b35;
+            background: #ff6b35;
+            color: white;
+        }
+        
+        .event-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .search-box {
+            position: relative;
+            flex: 1;
+            max-width: 400px;
+        }
+        
+        .search-box input {
+            width: 100%;
+            padding: 12px 45px 12px 20px;
+            border: 2px solid #e9ecef;
+            border-radius: 25px;
+            font-size: 1rem;
+        }
+        
+        .search-box i {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #666;
+        }
+        
+        .filter-options {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .filter-options select {
+            padding: 10px 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            background: white;
+        }
+        
+        /* Interactive Event Map */
+        .interactive-event-map {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .event-map-container {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .map-sidebar {
+            background: #f8f9fa;
+            border-radius: 16px;
+            padding: 25px;
+            height: fit-content;
+        }
+        
+        .sidebar-header h3 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        
+        .location-filters {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+        
+        .location-filters .filter-btn {
+            text-align: left;
+            justify-content: flex-start;
+            padding: 12px 15px;
+            border-radius: 8px;
+        }
+        
+        .events-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .event-list-item {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+        
+        .event-list-item:hover {
+            border-left-color: #ff6b35;
+            transform: translateX(5px);
+        }
+        
+        .event-list-item.active {
+            border-left-color: #ff6b35;
+            background: #fff5f2;
+        }
+        
+        .event-list-item h4 {
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+        
+        .event-list-item p {
+            color: #666;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+        
+        .map-main {
+            position: relative;
+        }
+        
+        .campus-map {
+            background: #f8f9fa;
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .campus-map::before {
+            content: 'Interactive Campus Map';
+            font-size: 1.5rem;
+            color: #666;
+            font-weight: 600;
+        }
+        
+        .map-controls {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .map-btn {
+            width: 40px;
+            height: 40px;
+            border: none;
+            background: white;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .map-btn:hover {
+            background: #ff6b35;
+            color: white;
+        }
+        
+        /* Enhanced Calendar */
+        .event-calendar {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        
+        .calendar-view-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
+        
+        .view-btn {
+            padding: 10px 20px;
+            border: 2px solid #e9ecef;
+            background: white;
+            color: #333;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .view-btn:hover,
+        .view-btn.active {
+            border-color: #ff6b35;
+            background: #ff6b35;
+            color: white;
+        }
+        
+        .quick-event-add {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        /* Event Registration */
+        .event-registration {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .registration-container {
+            background: #f8f9fa;
+            border-radius: 16px;
+            padding: 30px;
+            margin-top: 40px;
+        }
+        
+        .registration-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 20px;
+        }
+        
+        .registration-tabs .tab-btn {
+            padding: 12px 25px;
+            border: none;
+            background: transparent;
+            color: #666;
+            border-radius: 8px 8px 0 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .registration-tabs .tab-btn:hover,
+        .registration-tabs .tab-btn.active {
+            background: #ff6b35;
+            color: white;
+        }
+        
+        .tab-content {
+            min-height: 300px;
+        }
+        
+        .tab-pane {
+            display: none;
+        }
+        
+        .tab-pane.active {
+            display: block;
+        }
+        
+        /* Event Analytics */
+        .event-analytics {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        
+        .analytics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .analytics-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            transition: transform 0.3s ease;
+        }
+        
+        .analytics-card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .analytics-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.5rem;
+        }
+        
+        .analytics-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ff6b35;
+            margin-bottom: 10px;
+        }
+        
+        .analytics-content h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .analytics-content p {
+            color: #666;
+            margin: 0;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .event-map-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .map-sidebar {
+                order: 2;
+            }
+            
+            .map-main {
+                order: 1;
+            }
+            
+            .event-controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .search-box {
+                max-width: none;
+            }
+            
+            .filter-options {
+                justify-content: center;
+            }
+            
+            .analytics-grid {
+                grid-template-columns: 1fr;
+                padding: 0 20px;
+            }
+            
+            .registration-tabs {
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            .registration-tabs .tab-btn {
+                border-radius: 8px;
+                text-align: center;
+            }
+        }
+    </style>
+
+    <!-- Enhanced Events Script -->
+    <script>
+        // Enhanced Events Page Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Events Page
+            initializeEventsPage();
+            
+            // Initialize Interactive Map
+            initializeEventMap();
+            
+            // Initialize Calendar
+            initializeEventCalendar();
+            
+            // Initialize Registration System
+            initializeEventRegistration();
+            
+            // Initialize Analytics
+            initializeEventAnalytics();
+        });
+        
+        function initializeEventsPage() {
+            // Load dynamic content from backend
+            loadEventCategories();
+            loadUpcomingEvents();
+            loadEventAnalytics();
+        }
+        
+        function loadEventCategories() {
+            // Load categories from backend API
+            fetch('/php-backend/public/api/events/categories')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        displayEventCategories(data.data);
+                    }
+                })
+                .catch(error => console.error('Error loading categories:', error));
+        }
+        
+        function loadUpcomingEvents() {
+            // Load upcoming events from backend API
+            fetch('/php-backend/public/api/events/upcoming')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        displayUpcomingEvents(data.data);
+                    }
+                })
+                .catch(error => console.error('Error loading events:', error));
+        }
+        
+        function loadEventAnalytics() {
+            // Load event analytics from backend API
+            fetch('/php-backend/public/api/events/analytics')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        displayEventAnalytics(data.data);
+                    }
+                })
+                .catch(error => console.error('Error loading analytics:', error));
+        }
+        
+        function displayEventCategories(categories) {
+            const container = document.getElementById('categoryFilters');
+            if (!container) return;
+            
+            container.innerHTML = categories.map(category => `
+                <button class="filter-btn" data-category="${category.id}">
+                    ${category.name} (${category.eventCount})
+                </button>
+            `).join('');
+            
+            // Add event listeners
+            container.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => filterEventsByCategory(btn.dataset.category));
+            });
+        }
+        
+        function displayUpcomingEvents(events) {
+            const container = document.getElementById('eventsGrid');
+            if (!container) return;
+            
+            container.innerHTML = events.map(event => `
+                <div class="event-card animate-on-scroll" data-animation="slide-up">
+                    <div class="event-image">
+                        <img src="${event.image || 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'}" alt="${event.title}">
+                        <div class="event-date">
+                            <span class="date-day">${new Date(event.date).getDate()}</span>
+                            <span class="date-month">${new Date(event.date).toLocaleDateString('en-US', { month: 'short' })}</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-category">${event.category}</div>
+                        <h3 class="event-title">${event.title}</h3>
+                        <p class="event-description">${event.description}</p>
+                        <div class="event-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>${event.time}</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>${event.location}</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-users"></i>
+                                <span>${event.capacity} Participants</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <button class="btn btn-primary" onclick="registerForEvent('${event.id}')">Register Now</button>
+                            <button class="btn btn-secondary" onclick="viewEventDetails('${event.id}')">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        function displayEventAnalytics(analytics) {
+            document.getElementById('totalEvents').textContent = analytics.totalEvents || 0;
+            document.getElementById('totalParticipants').textContent = analytics.totalParticipants || 0;
+            document.getElementById('averageRating').textContent = (analytics.averageRating || 0).toFixed(1);
+            document.getElementById('upcomingEvents').textContent = analytics.upcomingEvents || 0;
+        }
+        
+        function filterEventsByCategory(categoryId) {
+            // Filter events by category
+            fetch(`/php-backend/public/api/events?category=${categoryId}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        displayUpcomingEvents(data.data);
+                    }
+                })
+                .catch(error => console.error('Error filtering events:', error));
+        }
+        
+        function initializeEventMap() {
+            // Initialize interactive event map
+            const mapContainer = document.getElementById('campusMap');
+            if (!mapContainer) return;
+            
+            // Add map functionality here
+            console.log('Event map initialized');
+        }
+        
+        function initializeEventCalendar() {
+            // Initialize event calendar
+            const calendarGrid = document.getElementById('calendarGrid');
+            if (!calendarGrid) return;
+            
+            // Add calendar functionality here
+            console.log('Event calendar initialized');
+        }
+        
+        function initializeEventRegistration() {
+            // Initialize event registration system
+            const tabs = document.querySelectorAll('.registration-tabs .tab-btn');
+            const panes = document.querySelectorAll('.tab-pane');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const targetTab = tab.dataset.tab;
+                    
+                    // Update active tab
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    
+                    // Update active pane
+                    panes.forEach(pane => {
+                        pane.classList.remove('active');
+                        if (pane.id === targetTab) {
+                            pane.classList.add('active');
+                        }
+                    });
+                });
+            });
+        }
+        
+        function initializeEventAnalytics() {
+            // Initialize event analytics
+            console.log('Event analytics initialized');
+        }
+        
+        function registerForEvent(eventId) {
+            // Register user for an event
+            console.log('Registering for event:', eventId);
+            // Add registration logic here
+        }
+        
+        function viewEventDetails(eventId) {
+            // View detailed event information
+            console.log('Viewing event details:', eventId);
+            // Add event details logic here
+        }
+        
+        // Search functionality
+        document.getElementById('eventSearch')?.addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            // Implement search functionality
+        });
+        
+        // Date filter functionality
+        document.getElementById('dateFilter')?.addEventListener('change', function(e) {
+            const dateFilter = e.target.value;
+            // Implement date filtering
+        });
+        
+        // Type filter functionality
+        document.getElementById('typeFilter')?.addEventListener('change', function(e) {
+            const typeFilter = e.target.value;
+            // Implement type filtering
+        });
+    </script>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

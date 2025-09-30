@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - UET Mardan</title>
+    <meta name="description" content="Explore our campus through photos, student activities, and university events at UET Mardan.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Frontend-Backend Integration Script -->
+    <script src="php-backend/public/frontend-integration.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-container">
+                    <div class="nav-logo">
+                        <div class="logo-icon">
+                            <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="UET Mardan Logo" class="logo-img">
+                        </div>
+                        <div class="logo-text">
+                            <h3>UET Mardan</h3>
+                            <span>Excellence in Engineering</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="departments.html" class="nav-link">Departments</a></li>
+                        <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+                        <li><a href="events.html" class="nav-link">Events</a></li>
+                        <li><a href="news.html" class="nav-link">News</a></li>
+                        <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    
+                    <div class="nav-toggle" id="navToggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Gallery Hero -->
+        <section class="gallery-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="title-line">Campus</span>
+                            <span class="title-line highlight">Gallery</span>
+                        </h1>
+                        <p class="hero-subtitle">Explore our beautiful campus, state-of-the-art facilities, and vibrant student life through stunning photographs</p>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Photos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">20+</span>
+                                <span class="stat-label">Categories</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Events</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="UET Mardan Campus" class="hero-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Gallery Categories & Filters -->
+        <section class="gallery-categories section-animate" id="galleryCategories">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="categoriesTitle">Gallery Categories</h2>
+                    <p class="section-subtitle" id="categoriesSubtitle">Explore our campus through different photo categories</p>
+                </div>
+                
+                <!-- Dynamic Category Tabs -->
+                <div class="categories-tabs" id="categoriesTabs">
+                    <!-- Categories will be loaded dynamically -->
+                </div>
+                
+                <!-- Advanced Search & Filter Controls -->
+                <div class="gallery-controls" id="galleryControls">
+                    <div class="search-box">
+                        <input type="text" id="gallerySearch" placeholder="Search photos...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="filter-options">
+                        <select id="dateFilter">
+                            <option value="">All Dates</option>
+                            <option value="today">Today</option>
+                            <option value="week">This Week</option>
+                            <option value="month">This Month</option>
+                            <option value="year">This Year</option>
+                        </select>
+                        <select id="sortFilter">
+                            <option value="latest">Latest First</option>
+                            <option value="oldest">Oldest First</option>
+                            <option value="popular">Most Popular</option>
+                            <option value="name">Name A-Z</option>
+                        </select>
+                        <button class="view-toggle" id="viewToggle">
+                            <i class="fas fa-th-large"></i>
+                            <span>Grid View</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Gallery Section -->
+        <section class="featured-gallery section-animate" id="featuredGallery">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Photos</h2>
+                    <p class="section-subtitle">Highlighted images from our campus</p>
+                </div>
+                
+                <!-- Dynamic Featured Gallery -->
+                <div class="featured-gallery-grid" id="featuredGalleryGrid">
+                    <!-- Featured photos will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Photo Gallery -->
+        <section class="photo-gallery section-animate" id="photoGallery">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="galleryTitle">Photo Gallery</h2>
+                    <p class="section-subtitle" id="gallerySubtitle">Browse through our collection of campus photos</p>
+                </div>
+                
+                <!-- Dynamic Gallery Grid -->
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Campus Photos -->
+                    <div class="gallery-item" data-category="campus">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Main Campus Building" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Main Campus Building</h3>
+                            <p>Modern architecture meets engineering excellence</p>
+                            <button class="view-btn" onclick="openLightbox(this)">View</button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="campus">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Campus Grounds" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Campus Grounds</h3>
+                            <p>Beautiful green spaces for students</p>
+                            <button class="view-btn" onclick="openLightbox(this)">View</button>
+                        </div>
+                    </div>
+
+                    <!-- Laboratory Photos -->
+                    <div class="gallery-item" data-category="labs">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Engineering Lab" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Engineering Laboratory</h3>
+                            <p>State-of-the-art equipment for hands-on learning</p>
+                            <button class="view-btn" onclick="openLightbox(this)">View</button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="labs">
+                        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Computer Lab" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Computer Laboratory</h3>
+                            <p>Advanced computing facilities for software development</p>
+                            <button class="view-btn" onclick="openLightbox(this)">View</button>
+                        </div>
+                    </div>
+
+                    <!-- Student Life Photos -->
+                    <div class="gallery-item" data-category="students">
+                        <img src="https://images.unsplash.com/photo-1523240798132-8757214e76ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Students in Class" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Students in Class</h3>
+                            <p>Engaged learning environment</p>
+                            <button class="view-btn" onclick="openLightbox(this)">View</button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="students">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Group Study" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Group Study Session</h3>
+                            <p>Collaborative learning approach</p>
+                            <button class="view-btn" onclick="openLightbox(this)">View</button>
+                        </div>
+                    </div>
+
+                    <!-- Event Photos -->
+                    <div class="gallery-item" data-category="events">
+                        <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Tech Conference" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Annual Tech Conference</h3>
+                            <p>Industry leaders and students networking</p>
+                            <button class="view-btn" onclick="openLightbox(this)">View</button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="events">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Graduation Ceremony" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Graduation Ceremony</h3>
+                            <p>Celebrating student achievements</p>
+                            <button class="view-btn" onclick="openLightbox(this)">View</button>
+                        </div>
+                    </div>
+
+                    <!-- Faculty Photos -->
+                    <div class="gallery-item" data-category="faculty">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Faculty Meeting" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Faculty Meeting</h3>
+                            <p>Academic excellence through collaboration</p>
+                            <button class="view-btn" onclick="openLightbox(this)">View</button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="faculty">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Research Discussion" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Research Discussion</h3>
+                            <p>Advancing knowledge through research</p>
+                            <button class="view-btn" onclick="openLightbox(this)">View</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Pagination -->
+                <div class="gallery-pagination" id="galleryPagination">
+                    <!-- Pagination will be generated dynamically -->
+                </div>
+                
+                <!-- Load More Button -->
+                <div class="load-more-container">
+                    <button class="btn btn-outline" id="loadMorePhotosBtn">
+                        <i class="fas fa-plus"></i>
+                        Load More Photos
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Gallery -->
+        <section class="video-gallery">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Video Gallery</h2>
+                    <p class="section-subtitle">Watch our campus tours, events, and student activities</p>
+                </div>
+                
+                <div class="video-grid">
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Campus Tour" class="video-img">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Virtual Campus Tour</h3>
+                            <p>Explore our beautiful campus and facilities</p>
+                            <span class="video-duration">5:30</span>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Student Life" class="video-img">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>A Day in Student Life</h3>
+                            <p>Experience a typical day at UET Mardan</p>
+                            <span class="video-duration">8:15</span>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Laboratory Tour" class="video-img">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Laboratory Facilities Tour</h3>
+                            <p>See our state-of-the-art laboratories</p>
+                            <span class="video-duration">6:45</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Upload -->
+        <section class="photo-upload">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Share Your Photos</h2>
+                    <p class="section-subtitle">Contribute to our gallery by sharing your campus memories</p>
+                </div>
+                
+                <div class="upload-form">
+                    <form id="photoUploadForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="photoTitle">Photo Title</label>
+                                <input type="text" id="photoTitle" name="photoTitle" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="photoCategory">Category</label>
+                                <select id="photoCategory" name="photoCategory" required>
+                                    <option value="">Select Category</option>
+                                    <option value="campus">Campus</option>
+                                    <option value="labs">Laboratories</option>
+                                    <option value="students">Student Life</option>
+                                    <option value="events">Events</option>
+                                    <option value="faculty">Faculty</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="photoDescription">Description</label>
+                            <textarea id="photoDescription" name="photoDescription" rows="3" placeholder="Describe your photo..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="photoFile">Upload Photo</label>
+                            <input type="file" id="photoFile" name="photoFile" accept="image/*" required>
+                            <p class="form-note">Maximum file size: 5MB. Supported formats: JPG, PNG, GIF</p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="photographerName">Photographer Name</label>
+                            <input type="text" id="photographerName" name="photographerName" placeholder="Your name or 'Anonymous'">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Upload Photo</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>UET Mardan</h3>
+                    <p>Excellence in Engineering Education</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="departments.html">Departments</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Departments</h4>
+                    <ul class="footer-links">
+                        <li><a href="departments/civil-engineering.html">Civil Engineering</a></li>
+                        <li><a href="departments/software-engineering.html">Software Engineering</a></li>
+                        <li><a href="departments/ai-engineering.html">AI Engineering</a></li>
+                        <li><a href="departments/electrical-engineering.html">Electrical Engineering</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> UET Mardan, Khyber Pakhtunkhwa</p>
+                    <p><i class="fas fa-phone"></i> +92-937-123456</p>
+                    <p><i class="fas fa-envelope"></i> info@uetmardan.edu.pk</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 UET Mardan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-img" id="lightboxImg">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+            <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        function openLightbox(button) {
+            const item = button.closest('.gallery-item');
+            const img = item.querySelector('.gallery-img');
+            const title = item.querySelector('h3').textContent;
+            const description = item.querySelector('p').textContent;
+            
+            document.getElementById('lightboxImg').src = img.src;
+            document.getElementById('lightboxImg').alt = img.alt;
+            document.getElementById('lightboxCaption').innerHTML = `<h3>${title}</h3><p>${description}</p>`;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+        
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+        
+        // Close lightbox when clicking outside
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>

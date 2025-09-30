@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Engineering & Technology Mardan - Excellence in Engineering Education</title>
+    <meta name="description" content="Leading engineering university in Mardan, Pakistan offering world-class education in various engineering disciplines.">
+    
+    <!-- Preload critical resources for faster loading -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts for typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Frontend-Backend Integration Script -->
+    <script src="php-backend/public/frontend-integration.js"></script>
+    
+    <!-- Enhanced Homepage Scripts -->
+    <script src="php-backend/public/homepage-enhancement.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="university-logo">
+                <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="UET Mardan Logo" class="loading-logo">
+            </div>
+            <h2>UET Mardan</h2>
+            <div class="loading-bar">
+                <div class="loading-progress" id="loadingProgress"></div>
+            </div>
+            <p>Loading Excellence...</p>
+            <p class="loading-hint">Click anywhere to skip</p>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- University Logo and Name -->
+                <div class="nav-logo">
+                    <div class="logo-icon">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="UET Mardan Logo" class="logo-img">
+                    </div>
+                    <div class="logo-text">
+                        <h3>UET Mardan</h3>
+                        <span>Excellence in Engineering</span>
+                    </div>
+                </div>
+
+                <!-- Navigation Menu -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="departments.html" class="nav-link">Departments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="admissions.html" class="nav-link">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="events.html" class="nav-link">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="meet-faculty.html" class="nav-link">Faculty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="research.html" class="nav-link">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="alumni.html" class="nav-link">Alumni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="careers.html" class="nav-link">Careers</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="moreDropdown">
+                            More <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="library.html" class="dropdown-item">Library</a></li>
+                            <li><a href="student-life.html" class="dropdown-item">Student Life</a></li>
+                            <li><a href="international.html" class="dropdown-item">International</a></li>
+                            <li><a href="about.html" class="dropdown-item">About Us</a></li>
+                            <li><a href="contact.html" class="dropdown-item">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Admin-Controlled Quick Actions -->
+                <div class="quick-actions" id="quickActions">
+                    <!-- Dynamic content will be loaded from admin panel -->
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Enhanced Hero Section with Dynamic Content -->
+    <section id="hero" class="hero-section">
+        <div class="hero-background">
+            <div class="background-slider" id="heroSlider">
+                <!-- Dynamic slides will be loaded from admin panel -->
+            </div>
+            <div class="hero-particles" id="hero-particles"></div>
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn prev" id="heroPrevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="slider-dots" id="heroSliderDots"></div>
+                <button class="slider-btn next" id="heroNextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-visual">
+                <div class="building-3d">
+                    <div class="building-front"></div>
+                    <div class="building-side"></div>
+                    <div class="building-top"></div>
+                </div>
+            </div>
+            
+            <div class="hero-text">
+                <h1 class="hero-title" id="heroTitle">
+                    <span class="title-line">University of</span>
+                    <span class="title-line highlight">Engineering & Technology</span>
+                    <span class="title-line">Mardan</span>
+                </h1>
+                <p class="hero-subtitle" id="heroSubtitle">
+                    Shaping the future through innovation, excellence, and engineering brilliance
+                </p>
+                
+                <!-- Dynamic Statistics -->
+                <div class="hero-stats" id="heroStats">
+                    <!-- Stats will be loaded from database -->
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="admissions.html" class="btn btn-primary" id="heroPrimaryBtn">Apply Now</a>
+                    <a href="departments.html" class="btn btn-secondary" id="heroSecondaryBtn">Explore Programs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced About Section with Admin Control -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" id="aboutTitle">About UET Mardan</h2>
+                <p class="section-subtitle" id="aboutSubtitle">Building tomorrow's engineers today</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 id="aboutHeading">Excellence in Engineering Education</h3>
+                    <p id="aboutDescription">
+                        The University of Engineering and Technology Mardan is a premier institution 
+                        dedicated to providing world-class engineering education. Our mission is to 
+                        nurture innovative thinkers and problem solvers who will lead the technological 
+                        advancement of Pakistan and beyond.
+                    </p>
+                    
+                    <!-- Dynamic Features -->
+                    <div class="about-features" id="aboutFeatures">
+                        <!-- Features will be loaded from admin panel -->
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="UET Mardan Campus" class="about-img" id="aboutImage">
+                        <div class="about-overlay">
+                            <i class="fas fa-university"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Programs Section with Database Integration -->
+    <section id="programs" class="programs-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Engineering Departments</h2>
+                <p class="section-subtitle">Comprehensive engineering education across multiple disciplines</p>
+            </div>
+            
+            <!-- Dynamic Departments Grid -->
+            <div class="departments-grid" id="departmentsGrid">
+                <!-- Departments will be loaded from database -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced News & Updates Section -->
+    <section id="news" class="news-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest News & Updates</h2>
+                <p class="section-subtitle">Stay informed about UET Mardan developments</p>
+            </div>
+            
+            <!-- Dynamic News Grid -->
+            <div class="news-grid" id="newsGrid">
+                <!-- News will be loaded from database -->
+            </div>
+            
+            <div class="section-footer">
+                <a href="news.html" class="btn btn-outline">View All News</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Events Section -->
+    <section id="events" class="events-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Upcoming Events</h2>
+                <p class="section-subtitle">Join our exciting campus activities and workshops</p>
+            </div>
+            
+            <!-- Dynamic Events Grid -->
+            <div class="events-grid" id="eventsGrid">
+                <!-- Events will be loaded from database -->
+            </div>
+            
+            <div class="section-footer">
+                <a href="events.html" class="btn btn-outline">View All Events</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Faculty Spotlight Section -->
+    <section id="faculty-spotlight" class="faculty-spotlight-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Our Faculty</h2>
+                <p class="section-subtitle">Experienced professors and researchers</p>
+            </div>
+            
+            <!-- Dynamic Faculty Grid -->
+            <div class="faculty-grid" id="facultyGrid">
+                <!-- Faculty will be loaded from database -->
+            </div>
+            
+            <div class="section-footer">
+                <a href="meet-faculty.html" class="btn btn-outline">Meet All Faculty</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Research & Innovation Section -->
+    <section id="research" class="research-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Research & Innovation</h2>
+                <p class="section-subtitle">Advancing knowledge through cutting-edge research</p>
+            </div>
+            
+            <div class="research-content">
+                <div class="research-areas" id="researchAreas">
+                    <!-- Research areas will be loaded from database -->
+                </div>
+                
+                <div class="research-stats" id="researchStats">
+                    <!-- Research statistics will be loaded from database -->
+                </div>
+            </div>
+            
+            <div class="section-footer">
+                <a href="research.html" class="btn btn-primary">Explore Research</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Student Life Section -->
+    <section id="student-life" class="student-life-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Student Life</h2>
+                <p class="section-subtitle">Beyond academics - discover campus life</p>
+            </div>
+            
+            <div class="student-life-grid" id="studentLifeGrid">
+                <!-- Student life content will be loaded from database -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Call-to-Action Section -->
+    <section id="cta" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title" id="ctaTitle">Ready to Start Your Engineering Journey?</h2>
+                <p class="cta-subtitle" id="ctaSubtitle">Join UET Mardan and become part of the next generation of engineers</p>
+                
+                <div class="cta-buttons">
+                    <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+                    <a href="departments.html" class="btn btn-secondary">Explore Programs</a>
+                    <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>UET Mardan</h3>
+                    <p>Excellence in Engineering Education</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="departments.html">Departments</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="news.html">News</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Mardan, Khyber Pakhtunkhwa, Pakistan</p>
+                    <p><i class="fas fa-phone"></i> +92-937-123456</p>
+                    <p><i class="fas fa-envelope"></i> info@uetmardan.edu.pk</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Stay updated with our latest news and events</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 UET Mardan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    
+    <!-- Enhanced Homepage Styles -->
+    <style>
+        /* Enhanced Homepage Styles */
+        .hero-section {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        
+        .background-slider {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        
+        .background-slider .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        .background-slider .slide.active {
+            opacity: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+        
+        .hero-text .title-line {
+            display: block;
+        }
+        
+        .hero-text .highlight {
+            color: #ff6b35;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .hero-stats {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            color: white;
+        }
+        
+        .stat-number {
+            display: block;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ff6b35;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255,107,53,0.4);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: #333;
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: #ff6b35;
+            border: 2px solid #ff6b35;
+        }
+        
+        .btn-outline:hover {
+            background: #ff6b35;
+            color: white;
+        }
+        
+        /* Section Styles */
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .section-footer {
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 40px;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-stats {
+                justify-content: center;
+            }
+            
+            .hero-buttons {
+                justify-content: center;
+            }
+        }
+    </style>
+</body>
+</html>

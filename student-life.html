@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Student Life - UET Mardan</title>
+	<meta name="description" content="Explore student life at UET Mardan: Clubs, Societies, Events, and more.	">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="header" id="header">
+		<nav class="navbar">
+			<div class="container">
+				<div class="nav-container">
+					<div class="nav-logo">
+						<div class="logo-icon">
+							<img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=100&q=80" alt="UET Mardan" class="logo-img">
+						</div>
+						<div class="logo-text">
+							<h3>UET Mardan</h3>
+							<span>Excellence in Engineering</span>
+						</div>
+					</div>
+					<ul class="nav-menu" id="navMenu">
+						<li><a href="index.html" class="nav-link">Home</a></li>
+						<li><a href="departments.html" class="nav-link active">Departments</a></li>
+						<li><a href="admissions.html" class="nav-link">Admissions</a></li>
+						<li><a href="events.html" class="nav-link">Events</a></li>
+						<li><a href="news.html" class="nav-link">News</a></li>
+						<li><a href="gallery.html" class="nav-link">Gallery</a></li>
+						<li><a href="contact.html" class="nav-link">Contact</a></li>
+					</ul>
+					<div class="nav-toggle" id="navToggle">
+						<span class="bar"></span><span class="bar"></span><span class="bar"></span>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main class="main-content">
+		<section class="departments-hero">
+			<div class="container">
+				<div class="hero-content">
+					<div class="hero-text">
+						<h1 class="hero-title"><span class="title-line">Engineering</span><span class="title-line highlight">Departments</span></h1>
+						<p class="hero-subtitle">Clear, simple navigation to each department. Click a card to view details, programs, and faculty.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="departments-overview">
+			<div class="container">
+				<div class="departments-grid">
+					<a class="department-card" href="departments/civil-engineering.html">
+						<div class="department-header">
+							<div class="department-image"><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=500&q=80" alt="Civil" class="department-img"><div class="department-overlay"><i class="fas fa-building"></i></div></div>
+							<div class="department-info"><h3>Civil Engineering</h3><p>Infrastructure, structures, environment</p></div>
+						</div>
+					</a>
+
+					<a class="department-card" href="departments/software-engineering.html">
+						<div class="department-header">
+							<div class="department-image"><img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?auto=format&fit=crop&w=500&q=80" alt="Software" class="department-img"><div class="department-overlay"><i class="fas fa-laptop-code"></i></div></div>
+							<div class="department-info"><h3>Software Engineering</h3><p>Modern software and systems</p></div>
+						</div>
+					</a>
+
+					<a class="department-card" href="departments/ai-engineering.html">
+						<div class="department-header">
+							<div class="department-image"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=500&q=80" alt="AI" class="department-img"><div class="department-overlay"><i class="fas fa-robot"></i></div></div>
+							<div class="department-info"><h3>AI & Machine Learning</h3><p>Intelligent systems and automation</p></div>
+						</div>
+					</a>
+
+					<a class="department-card" href="departments/data-science.html">
+						<div class="department-header">
+							<div class="department-image"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=500&q=80" alt="Data Science" class="department-img"><div class="department-overlay"><i class="fas fa-chart-line"></i></div></div>
+							<div class="department-info"><h3>Data Science</h3><p>Analytics and big data</p></div>
+						</div>
+					</a>
+
+					<a class="department-card" href="departments/telecommunications.html">
+						<div class="department-header">
+							<div class="department-image"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=500&q=80" alt="Telecom" class="department-img"><div class="department-overlay"><i class="fas fa-satellite-dish"></i></div></div>
+							<div class="department-info"><h3>Telecommunications</h3><p>Networks and communication</p></div>
+						</div>
+					</a>
+				</div>
+				<div class="cta-buttons" style="margin-top: 32px; text-align:center;">
+					<a href="meet-faculty.html" class="btn btn-secondary">Meet Faculty</a>
+					<a href="admissions.html" class="btn btn-primary">Apply Now</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-bottom"><p>&copy; 2024 UET Mardan</p></div>
+		</div>
+	</footer>
+	<button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+	<script src="script.js"></script>
+</body>
+</html>

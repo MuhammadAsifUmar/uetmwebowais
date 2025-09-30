@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - UET Mardan</title>
+    <meta name="description" content="Apply to UET Mardan engineering programs. Learn about admission requirements, application process, and important deadlines.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Frontend-Backend Integration Script -->
+    <script src="php-backend/public/frontend-integration.js"></script>
+    
+    <!-- Enhanced Admissions Script -->
+    <script src="php-backend/public/admissions-enhancement.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-container">
+                    <div class="nav-logo">
+                        <div class="logo-icon">
+                            <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="UET Mardan Logo" class="logo-img">
+                        </div>
+                        <div class="logo-text">
+                            <h3>UET Mardan</h3>
+                            <span>Excellence in Engineering</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="departments.html" class="nav-link">Departments</a></li>
+                        <li><a href="admissions.html" class="nav-link active">Admissions</a></li>
+                        <li><a href="events.html" class="nav-link">Events</a></li>
+                        <li><a href="news.html" class="nav-link">News</a></li>
+                        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    
+                    <div class="nav-toggle" id="navToggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Enhanced Admissions Hero -->
+        <section class="admissions-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title" id="heroTitle">
+                            <span class="title-line">Join UET</span>
+                            <span class="title-line highlight">Mardan</span>
+                        </h1>
+                        <p class="hero-subtitle" id="heroSubtitle">
+                            Start your engineering journey with Pakistan's premier engineering institution
+                        </p>
+                        
+                        <!-- Dynamic Hero Statistics -->
+                        <div class="hero-stats" id="heroStats">
+                            <!-- Stats will be loaded from database -->
+                        </div>
+                        
+                        <div class="hero-buttons">
+                            <a href="#apply-now" class="btn btn-primary" id="applyNowBtn">Apply Now</a>
+                            <a href="#requirements" class="btn btn-secondary" id="requirementsBtn">View Requirements</a>
+                            <a href="#scholarships" class="btn btn-outline" id="scholarshipsBtn">Scholarships</a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="hero-image-container">
+                            <img src="https://images.unsplash.com/photo-1523240798132-8757214e76ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Students at UET Mardan" class="hero-image" id="heroImage">
+                            <div class="hero-overlay">
+                                <div class="overlay-content">
+                                    <h3>Application Portal Open</h3>
+                                    <p>Fall 2024 Admissions</p>
+                                    <span class="deadline">Deadline: May 31, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Application Process -->
+        <section class="application-process section-animate" id="applicationProcess">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="processTitle">Application Process</h2>
+                    <p class="section-subtitle" id="processSubtitle">Simple steps to join our engineering community</p>
+                </div>
+                
+                <!-- Dynamic Process Steps -->
+                <div class="process-steps" id="processSteps">
+                    <!-- Process steps will be loaded from database -->
+                </div>
+                
+                <!-- Application Status Tracker -->
+                <div class="application-tracker" id="applicationTracker">
+                    <h3>Track Your Application</h3>
+                    <div class="tracker-form">
+                        <input type="text" id="applicationId" placeholder="Enter Application ID">
+                        <button class="btn btn-primary" id="trackApplicationBtn">Track Status</button>
+                    </div>
+                    <div class="tracker-results" id="trackerResults"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Programs Overview -->
+        <section class="programs-overview" id="programsOverview">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Available Programs</h2>
+                    <p class="section-subtitle">Choose from our comprehensive range of engineering programs</p>
+                </div>
+                
+                <!-- Program Selection Tabs -->
+                <div class="programs-tabs" id="programsTabs">
+                    <!-- Tabs will be loaded dynamically -->
+                </div>
+                
+                <!-- Dynamic Program Content -->
+                <div class="tab-content" id="tabContent">
+                    <!-- Program content will be loaded from database -->
+                </div>
+                
+                <!-- Program Comparison Tool -->
+                <div class="program-comparison" id="programComparison">
+                    <h3>Compare Programs</h3>
+                    <div class="comparison-selector">
+                        <select id="compareProgram1" class="compare-select">
+                            <option value="">Select First Program</option>
+                        </select>
+                        <select id="compareProgram2" class="compare-select">
+                            <option value="">Select Second Program</option>
+                        </select>
+                        <button class="btn btn-primary" id="compareProgramsBtn">Compare</button>
+                    </div>
+                    <div class="comparison-results" id="comparisonResults"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Requirements Section -->
+        <section class="requirements-section" id="requirements">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Admission Requirements</h2>
+                    <p class="section-subtitle">Everything you need to know about eligibility and documents</p>
+                </div>
+                
+                <!-- Dynamic Requirements -->
+                <div class="requirements-grid" id="requirementsGrid">
+                    <!-- Requirements will be loaded from database -->
+                </div>
+                
+                <!-- Document Upload Guide -->
+                <div class="document-guide" id="documentGuide">
+                    <h3>Required Documents</h3>
+                    <div class="document-list" id="documentList">
+                        <!-- Document list will be loaded from database -->
+                    </div>
+                    
+                    <div class="upload-instructions">
+                        <h4>Document Upload Guidelines</h4>
+                        <ul>
+                            <li>All documents must be in PDF format</li>
+                            <li>Maximum file size: 5MB per document</li>
+                            <li>Ensure documents are clear and legible</li>
+                            <li>Upload original or certified copies only</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Scholarships Section -->
+        <section class="scholarships-section" id="scholarships">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Scholarships & Financial Aid</h2>
+                    <p class="section-subtitle">Make your education affordable with our scholarship programs</p>
+                </div>
+                
+                <!-- Dynamic Scholarships -->
+                <div class="scholarships-grid" id="scholarshipsGrid">
+                    <!-- Scholarships will be loaded from database -->
+                </div>
+                
+                <!-- Scholarship Calculator -->
+                <div class="scholarship-calculator" id="scholarshipCalculator">
+                    <h3>Scholarship Eligibility Calculator</h3>
+                    <div class="calculator-form">
+                        <div class="form-group">
+                            <label for="academicScore">Academic Score (%)</label>
+                            <input type="number" id="academicScore" min="0" max="100" placeholder="Enter your score">
+                        </div>
+                        <div class="form-group">
+                            <label for="familyIncome">Family Income (Monthly)</label>
+                            <input type="number" id="familyIncome" placeholder="Enter monthly income">
+                        </div>
+                        <div class="form-group">
+                            <label for="programType">Program Type</label>
+                            <select id="programType">
+                                <option value="">Select Program</option>
+                                <option value="undergraduate">Undergraduate</option>
+                                <option value="graduate">Graduate</option>
+                                <option value="phd">PhD</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary" id="calculateScholarshipBtn">Calculate Eligibility</button>
+                    </div>
+                    <div class="calculator-results" id="calculatorResults"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Application Form -->
+        <section class="application-form-section" id="apply-now">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Online Application</h2>
+                    <p class="section-subtitle">Complete your application in just a few steps</p>
+                </div>
+                
+                <!-- Multi-step Application Form -->
+                <div class="application-form-container" id="applicationFormContainer">
+                    <!-- Form will be loaded dynamically -->
+                </div>
+                
+                <!-- Application Progress -->
+                <div class="application-progress" id="applicationProgress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="progress-steps" id="progressSteps">
+                        <!-- Progress steps will be shown -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Important Dates -->
+        <section class="important-dates" id="importantDates">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Important Dates & Deadlines</h2>
+                    <p class="section-subtitle">Mark your calendar for key admission deadlines</p>
+                </div>
+                
+                <!-- Dynamic Timeline -->
+                <div class="dates-timeline" id="datesTimeline">
+                    <!-- Timeline will be loaded from database -->
+                </div>
+                
+                <!-- Deadline Reminders -->
+                <div class="deadline-reminders" id="deadlineReminders">
+                    <h3>Set Reminders</h3>
+                    <div class="reminder-form">
+                        <input type="email" id="reminderEmail" placeholder="Enter your email">
+                        <button class="btn btn-primary" id="setReminderBtn">Set Reminder</button>
+                    </div>
+                    <p class="reminder-note">We'll send you reminders for important deadlines</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Campus Life Preview -->
+        <section class="campus-life-preview">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Life at UET Mardan</h2>
+                    <p class="section-subtitle">Discover what makes our campus special</p>
+                </div>
+                
+                <div class="campus-features" id="campusFeatures">
+                    <!-- Campus features will be loaded from database -->
+                </div>
+                
+                <!-- Virtual Tour -->
+                <div class="virtual-tour" id="virtualTour">
+                    <h3>Take a Virtual Tour</h3>
+                    <div class="tour-preview">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Campus Tour" class="tour-image">
+                        <div class="tour-overlay">
+                            <button class="btn btn-primary" id="startVirtualTourBtn">
+                                <i class="fas fa-play"></i>
+                                Start Virtual Tour
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Find answers to common admission questions</p>
+                </div>
+                
+                <!-- Dynamic FAQ -->
+                <div class="faq-container" id="faqContainer">
+                    <!-- FAQ items will be loaded from database -->
+                </div>
+                
+                <!-- Ask Question Form -->
+                <div class="ask-question" id="askQuestion">
+                    <h3>Still Have Questions?</h3>
+                    <form class="question-form" id="questionForm">
+                        <div class="form-group">
+                            <input type="text" id="questionName" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="questionEmail" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="questionText" placeholder="Your Question" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Ask Question</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Contact & Support -->
+        <section class="contact-support">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Need Help?</h2>
+                    <p class="section-subtitle">Our admission team is here to support you</p>
+                </div>
+                
+                <div class="support-grid" id="supportGrid">
+                    <!-- Support options will be loaded from database -->
+                </div>
+                
+                <!-- Live Chat -->
+                <div class="live-chat" id="liveChat">
+                    <h3>Live Chat Support</h3>
+                    <div class="chat-status">
+                        <span class="status-indicator online"></span>
+                        <span class="status-text">Admission counselors available now</span>
+                    </div>
+                    <button class="btn btn-primary" id="startChatBtn">
+                        <i class="fas fa-comments"></i>
+                        Start Chat
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>UET Mardan</h3>
+                    <p>Excellence in Engineering Education</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="departments.html">Departments</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="news.html">News</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Mardan, Khyber Pakhtunkhwa, Pakistan</p>
+                    <p><i class="fas fa-phone"></i> +92-937-123456</p>
+                    <p><i class="fas fa-envelope"></i> info@uetmardan.edu.pk</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Stay updated with our latest news and events</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 UET Mardan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enhanced Admissions Styles -->
+    <style>
+        /* Enhanced Admissions Page Styles */
+        .admissions-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .admissions-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1523240798132-8757214e76ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+            opacity: 0.1;
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+        
+        .hero-title .title-line {
+            display: block;
+        }
+        
+        .hero-title .highlight {
+            color: #ff6b35;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+        
+        .hero-stats {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ff6b35;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255,107,53,0.4);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: #333;
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: #ff6b35;
+            border: 2px solid #ff6b35;
+        }
+        
+        .btn-outline:hover {
+            background: #ff6b35;
+            color: white;
+        }
+        
+        .hero-image-container {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .overlay-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .deadline {
+            background: #ff6b35;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        
+        /* Application Process */
+        .application-process {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .step-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            transition: transform 0.3s ease;
+        }
+        
+        .step-card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: #ff6b35;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 20px;
+        }
+        
+        .step-card h4 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .step-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Application Tracker */
+        .application-tracker {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            text-align: center;
+        }
+        
+        .tracker-form {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        
+        .tracker-form input {
+            padding: 12px 20px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 1rem;
+            min-width: 250px;
+        }
+        
+        .tracker-form input:focus {
+            border-color: #ff6b35;
+            outline: none;
+        }
+        
+        .tracker-results {
+            margin-top: 20px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            display: none;
+        }
+        
+        /* Programs Overview */
+        .programs-overview {
+            padding: 80px 0;
+        }
+        
+        .programs-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .tab-btn {
+            padding: 15px 30px;
+            border: none;
+            background: rgba(255,255,255,0.1);
+            color: #333;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 2px solid #e9ecef;
+        }
+        
+        .tab-btn:hover {
+            background: rgba(255,107,53,0.1);
+            border-color: #ff6b35;
+        }
+        
+        .tab-btn.active {
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            color: white;
+            border-color: #ff6b35;
+        }
+        
+        .tab-btn i {
+            font-size: 1.1rem;
+        }
+        
+        .tab-content {
+            margin-top: 40px;
+        }
+        
+        .tab-pane {
+            display: none;
+        }
+        
+        .tab-pane.active {
+            display: block;
+        }
+        
+        /* Program Comparison */
+        .program-comparison {
+            margin-top: 60px;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 16px;
+        }
+        
+        .comparison-selector {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .compare-select {
+            padding: 12px 20px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 1rem;
+            min-width: 200px;
+        }
+        
+        .comparison-results {
+            margin-top: 30px;
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            display: none;
+        }
+        
+        /* Requirements Section */
+        .requirements-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        
+        .requirements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .requirement-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            transition: transform 0.3s ease;
+        }
+        
+        .requirement-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .requirement-icon {
+            width: 60px;
+            height: 60px;
+            background: #ff6b35;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .requirement-card h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .requirement-card ul {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .requirement-card li {
+            margin-bottom: 8px;
+        }
+        
+        /* Scholarships Section */
+        .scholarships-section {
+            padding: 80px 0;
+        }
+        
+        .scholarships-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .scholarship-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            transition: transform 0.3s ease;
+        }
+        
+        .scholarship-card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .scholarship-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .scholarship-amount {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .scholarship-content {
+            padding: 25px;
+        }
+        
+        .scholarship-content h4 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .scholarship-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .scholarship-requirements {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .scholarship-requirements h5 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .scholarship-requirements ul {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* Scholarship Calculator */
+        .scholarship-calculator {
+            background: #f8f9fa;
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .calculator-form {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .form-group {
+            text-align: left;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 600;
+        }
+        
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: #ff6b35;
+            outline: none;
+        }
+        
+        .calculator-results {
+            margin-top: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            display: none;
+        }
+        
+        /* Application Form */
+        .application-form-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        
+        .application-form-container {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+        
+        .application-progress {
+            margin-bottom: 40px;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+        
+        .progress-steps {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        /* Important Dates */
+        .important-dates {
+            padding: 80px 0;
+        }
+        
+        .dates-timeline {
+            margin-bottom: 60px;
+        }
+        
+        .timeline-item {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            align-items: center;
+        }
+        
+        .timeline-date {
+            background: #ff6b35;
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            min-width: 120px;
+            flex-shrink: 0;
+        }
+        
+        .timeline-date .month {
+            display: block;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        
+        .timeline-date .day {
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+        
+        .timeline-content h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .timeline-content p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Deadline Reminders */
+        .deadline-reminders {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            text-align: center;
+        }
+        
+        .reminder-form {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        
+        .reminder-form input {
+            padding: 12px 20px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 1rem;
+            min-width: 250px;
+        }
+        
+        .reminder-note {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* Campus Life Preview */
+        .campus-life-preview {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        
+        .campus-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .campus-feature {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            transition: transform 0.3s ease;
+        }
+        
+        .campus-feature:hover {
+            transform: translateY(-5px);
+        }
+        
+        .campus-feature i {
+            font-size: 3rem;
+            color: #ff6b35;
+            margin-bottom: 20px;
+        }
+        
+        .campus-feature h4 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .campus-feature p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Virtual Tour */
+        .virtual-tour {
+            text-align: center;
+        }
+        
+        .tour-preview {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            margin: 40px 0;
+        }
+        
+        .tour-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        
+        .tour-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            padding: 80px 0;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto 60px;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 20px;
+            background: #f8f9fa;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: #e9ecef;
+        }
+        
+        .faq-question h4 {
+            color: #333;
+            margin: 0;
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-answer.active {
+            padding: 20px;
+            max-height: 200px;
+        }
+        
+        .faq-answer p {
+            color: #666;
+            line-height: 1.6;
+            margin: 0;
+        }
+        
+        /* Ask Question Form */
+        .ask-question {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            text-align: center;
+        }
+        
+        .question-form {
+            max-width: 500px;
+            margin: 30px auto 0;
+        }
+        
+        .question-form .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .question-form input,
+        .question-form textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        
+        .question-form input:focus,
+        .question-form textarea:focus {
+            border-color: #ff6b35;
+            outline: none;
+        }
+        
+        /* Contact & Support */
+        .contact-support {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        
+        .support-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .support-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            transition: transform 0.3s ease;
+        }
+        
+        .support-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .support-card i {
+            font-size: 3rem;
+            color: #ff6b35;
+            margin-bottom: 20px;
+        }
+        
+        .support-card h4 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .support-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        /* Live Chat */
+        .live-chat {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            text-align: center;
+        }
+        
+        .chat-status {
+            margin: 20px 0;
+        }
+        
+        .status-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        .status-indicator.online {
+            background: #28a745;
+        }
+        
+        .status-indicator.offline {
+            background: #dc3545;
+        }
+        
+        .status-text {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 40px;
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-stats {
+                justify-content: center;
+            }
+            
+            .hero-buttons {
+                justify-content: center;
+            }
+            
+            .process-steps {
+                grid-template-columns: 1fr;
+                padding: 0 20px;
+            }
+            
+            .tracker-form {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .tracker-form input {
+                min-width: auto;
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .programs-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .tab-btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+            
+            .comparison-selector {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .compare-select {
+                min-width: auto;
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .requirements-grid {
+                grid-template-columns: 1fr;
+                padding: 0 20px;
+            }
+            
+            .scholarships-grid {
+                grid-template-columns: 1fr;
+                padding: 0 20px;
+            }
+            
+            .calculator-form {
+                grid-template-columns: 1fr;
+            }
+            
+            .timeline-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .timeline-date {
+                min-width: auto;
+            }
+            
+            .reminder-form {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .reminder-form input {
+                min-width: auto;
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .campus-features {
+                grid-template-columns: 1fr;
+                padding: 0 20px;
+            }
+            
+            .support-grid {
+                grid-template-columns: 1fr;
+                padding: 0 20px;
+            }
+        }
+    </style>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
